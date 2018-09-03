@@ -1,9 +1,9 @@
 import BaseState from "./baseState";
 
 export default class DispachedState extends BaseState {
-    dispatch: any;
+	dispatch: any;
 
-    constructor(state: any) {
-        super(state);  
-    }
+	constructor(state: any) {
+		super(state);
+	}
 }

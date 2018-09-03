@@ -7,11 +7,11 @@ import TodoItemsReducer from "./components/todo/todoItemsReducer";
 
 // Reducers
 //--------------
-let reducers : ReducersMapObject<BaseState, IAction<BaseActionType, any>> = {
+let reducers: ReducersMapObject<BaseState, IAction<BaseActionType, any>> = {
 	items: TodoItemsReducer,
 };
 
-const combinedReducers   = combineReducers<BaseState>(reducers);
+const combinedReducers = combineReducers<BaseState>(reducers);
 
 // Middlewares
 //--------------

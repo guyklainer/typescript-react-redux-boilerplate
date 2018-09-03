@@ -41,9 +41,9 @@ class TodoList extends React.Component<TodoItemsProps, TodoInternalState> {
 	}
 
 	private buildList() {
-		const spinner   = <Spinner intent={Intent.SUCCESS}/>;
+		const spinner           = <Spinner intent={Intent.SUCCESS}/>;
 		const items: TodoItem[] = this.props.items;
-		const listItems = items.map(item =>
+		const listItems         = items.map(item =>
 			<li key={item.id}>
 				{item.value}
 				{item.done ? item.done : spinner }

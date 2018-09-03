@@ -1,7 +1,7 @@
 import TodoItem from "./todoItem";
-import { Dispatch } from "redux";
+import {Dispatch} from "redux";
 import IAction from "../../commons/iAction";
-import { TodoItemActionTypeEnum } from "./todoItemActionTypeEnum";
+import {TodoItemActionTypeEnum} from "./todoItemActionTypeEnum";
 
 type TodoItemsProps = {
 	items: TodoItem[],

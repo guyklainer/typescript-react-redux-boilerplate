@@ -1,4 +1,4 @@
-import { TodoItemActionTypeEnum } from "../components/todo/TodoItemActionTypeEnum";
+import {TodoItemActionTypeEnum} from "../components/todo/TodoItemActionTypeEnum";
 
 type ActionType = TodoItemActionTypeEnum;
 
