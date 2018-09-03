@@ -13,10 +13,12 @@
   "dependencies": {
     "@blueprintjs/core": "^3.3.0",
     "@types/react-redux": "^6.0.6",
+    "@types/redux-logger": "^3.0.6",
     "express": "^4.16.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
+    "redux-logger": "^3.0.6",
     "typescript": "^3.0.1"
   },
   "devDependencies": {

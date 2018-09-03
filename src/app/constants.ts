@@ -1,6 +1,4 @@
 export default {
-    "NODE_ENV":{
-        "PROD": "production",
-        "DEV": "development"
-    }
+	NAME           : "React Infra",
+	ROOT_ELEMENT_ID: "root"
 }
