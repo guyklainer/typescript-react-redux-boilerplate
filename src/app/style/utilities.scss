@@ -1,0 +1,5 @@
+@each $size, $length in $spacers {
+  .l-height-#{$size} {
+    line-height: $size;
+  }
+}

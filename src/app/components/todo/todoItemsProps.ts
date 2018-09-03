@@ -3,8 +3,9 @@ import {Dispatch} from "redux";
 import IAction from "../../commons/iAction";
 import {TodoItemActionTypeEnum} from "./todoItemActionTypeEnum";
 
-type TodoItemsProps = {
+interface TodoItemsProps {
 	items: TodoItem[],
 	dispatch: Dispatch<IAction<TodoItemActionTypeEnum, any>>
-};
+}
+
 export default TodoItemsProps;

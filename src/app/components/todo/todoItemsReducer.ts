@@ -6,8 +6,12 @@ export default function TodoItemsReducer(state: TodoItem[] = [], action: IAction
 	let newState: TodoItem[] = [...state];
 
 	switch (action.type) {
-		case TodoItemActionTypeEnum.DONE:
+		case TodoItemActionTypeEnum.COMPLETE:
 			newState.find(item => item.id == action.payload).done = true;
+			break;
+
+		case TodoItemActionTypeEnum.PENDING:
+			newState.find(item => item.id == action.payload).done = false;
 			break;
 
 		case TodoItemActionTypeEnum.ADD:
@@ -16,7 +20,11 @@ export default function TodoItemsReducer(state: TodoItem[] = [], action: IAction
 			break;
 
 		case TodoItemActionTypeEnum.REMOVE:
-			newState.splice(action.payload, 1);
+			let itemIndex = newState
+				.map((item, index) => item.id == action.payload ? index : null)
+				.find(item => item !== null);
+
+			newState.splice(itemIndex, 1);
 	}
 
 	return newState;
